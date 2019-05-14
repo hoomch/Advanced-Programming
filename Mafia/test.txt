@@ -1,0 +1,10 @@
+Create_room room1 -Mafia 7 -Villager 9 -Doctor 3 -Detective 2 -Silencer 4 -GodFather 2
+Create_room room2 -Mafia 8 -GodFather 3 -Silencer 4
+Switch_room room1
+Switch_room room2
+Join mahsa asghar nazi palang joojoo man you
+Join shoma
+Vote mahsa nazi
+Vote asghar mahsa
+Vote palang nazi
+End_vote
