@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <style>
+    body {
+        font-family: "Arial";
+        background-image: url("/background");
+        background-attachment: fixed;
+        text-align: center;
+        margin:0;
+    }
+
+    a:link:not(#logo), a:visited:not(#logo) {
+    	font-family: "Arial";
+        background-color: rgb(54, 98, 114);
+        color: white;
+        padding: 14px 25px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover:not(#logo), a:active:not(#logo) {
+        background-color: #0099ff;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(40, 32, 66);
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a:not(#logo) {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active):not(#logo) {
+        background-color: #0099ff;
+    }
+
+    input[type=text],[type=password] {
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .button {
+        background-color: rgb(40, 32, 66);  
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #0099ff;
+    }
+
+    .signup_div {
+        width: 28%;
+        height: 450px;
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #f2f2f2;
+        padding: 15px;
+        margin : auto;
+    }
+
+
+    .loginp {
+        font-family: "Arial";
+        font-size: 32pt;
+        color: rgb(40, 32, 66);
+    }
+
+    </style>
+    </head>
+
+    <body>
+	<ul>
+	  <li> <a href="/" id="logo"> <img src="/JeekJeekLogo" width="59px" height="42"> </a> </li>
+	  <li><a href="/login_page">Login</a></li>
+	  <li style="float:right;"><a href="/signup_page">Signup</a></li>
+	</ul>
+    <br> <br>
+
+    <p style=" font-size: 14pt; color: rgb(40, 32, 66);">  User already exists <br> Please try again </p>
+
+    <div class="signup_div">
+
+    <form action="/signup" method="post">
+        <p class="loginp"> Signup </p>
+        <input name="username" type="text" placeholder="Username" /> <br>
+        <input name="displayname" type="text" placeholder="Displayname" /> <br>
+        <input name="password" type="password" placeholder="Password" /> <br><br>
+        <button class="button" type="submit" >Signup</button> <br>
+    </form>
+    
+    <a href="/login_page">Click here to login</a>
+    </div>
+
+
+    </body>
+
+</html>
+
+

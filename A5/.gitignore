@@ -1,0 +1,6 @@
+.DS_Store
+tests/
+*.o
+*.out
+*.md
+Icon\r\r

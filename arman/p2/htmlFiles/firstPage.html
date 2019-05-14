@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+			font-family: "Arial";
+			background-image: url("/background");
+			background-attachment: fixed;
+			text-align: center;
+			margin:0;
+		}
+
+		a:link:not(#logo), a:visited:not(#logo) {
+			font-family: "Arial";
+		    background-color: rgb(54, 98, 114);
+		    color: white;
+		    padding: 14px 25px;
+		    text-decoration: none;
+		    display: inline-block;
+		}
+
+		a:hover:not(#logo), a:active:not(#logo) {
+		    background-color: #0099ff;
+		}
+
+		ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		    background-color: rgb(40, 32, 66);
+		    position: fixed;
+		    top: 0;
+		    width: 100%;
+		}
+
+		li {
+		    float: left;
+		}
+
+		li a:not(#logo) {
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		}
+
+		li a:hover:not(.active):not(#logo) {
+		    background-color: #0099ff;
+		}
+	</style>
+	</head>
+
+	<body>
+
+	<ul>
+	  <li> <a href="/" id="logo"> <img src="/JeekJeekLogo" width="59px" height="42"> </a> </li>
+	  <li><a href="/login_page">Login</a></li>
+	  <li style="float:right;"><a href="/signup_page">Signup</a></li>
+	</ul>
+
+	<br>
+	<img src="/JeekJeekLogoWithText" width="300px" height="300px"> <br> <br>
+	<a href="/login_page"> <font size="4"> Get Started </font> </a>
+	</body>
+</html>
